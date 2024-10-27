@@ -32,7 +32,7 @@ def update_scores(
   We assume that the scores are in the log space.
   Args:
     scores: Scores (batch_size, vocab_size).
-    g_values: G valus (batch_size, vocab_size, depth).
+    g_values: G values (batch_size, vocab_size, depth).
 
   Returns:
     Updated scores (batch_size, vocab_size).
@@ -64,7 +64,7 @@ def update_scores_distortionary(
   We assume that the scores are in the log space.
   Args:
     scores: Scores (batch_size, vocab_size).
-    g_values: G valus (batch_size, vocab_size, depth).
+    g_values: G values (batch_size, vocab_size, depth).
     num_leaves: Number of leaves per node in the tournament tree.
 
   Returns:

@@ -41,7 +41,7 @@ def accumulate_hash(
     increment: (int) increment of linear congruential generator
 
   Returns:
-    upadted hash (shape,)
+    updated hash (shape,)
   """
   for i in range(data.shape[-1]):
     current_hash = torch.add(current_hash, data[..., i])

@@ -702,7 +702,7 @@ def train(
 
 
 class BayesianDetector:
-  """Baysian detector class used for watermark detection."""
+  """Bayesian detector class used for watermark detection."""
 
   detector_module: BayesianDetectorModule
   tokenizer: Any
@@ -745,7 +745,7 @@ class BayesianDetector:
             input_ids=outputs,
         )
     )
-    # context repitition mask shape [batch_size, output_len - (ngram_len - 1)]
+    # context repetition mask shape [batch_size, output_len - (ngram_len - 1)]
 
     combined_mask = context_repetition_mask * eos_token_mask
 
@@ -1004,7 +1004,7 @@ class BayesianDetector:
 
     In practice, we have found that tuning pos_truncation_length,
     neg_truncation_length, n_epochs, learning_rate and l2_weights can help
-    improve the performance of the detector. We reccommend tuning these
+    improve the performance of the detector. We recommend tuning these
     parameters for your data.
 
     Args:
